@@ -46,3 +46,27 @@ icon.onclick=function(){
     }
 }
 
+////////////////////
+function borrarVictimaArray(victima){
+    for (let i = 0; i < Names.length; i++) {
+        if (victima == Names[i]) {
+            Names.splice(i, 1)
+            console.log(Names)
+        }
+        
+    }
+    console.log(Names)
+}
+borrarVictimaArray("hola")
+
+function borrarVictimas(elementoThis) {
+    let localizacion = document.getElementById("borrar");
+    let nombreVictima = elementoThis.previousSibling;
+    let elementoLi = nombreVictima.parentElement;
+    //elementoLi.remove();
+    borrarVictimaArray(nombreVictima)
+    //console.log(typeof)
+    
+    //console.log(elementoLi);
+}
+      

@@ -13,10 +13,9 @@
 .audio-section {
   position: absolute;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  bottom: 2%;
-  left: 21%;
+  justify-content: flex-end;
+  bottom: 8.5%;
+  left: 42%;
 }
 .img {
   width: 40px;
