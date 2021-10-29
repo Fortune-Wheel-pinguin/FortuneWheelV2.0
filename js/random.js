@@ -1,7 +1,3 @@
-0.1541368461869
-
-
-
 let causas = [
   "tu amigo y vecino spiderman muere a causa del guantele de thanos.",
   "Atropellado por el autobus a 100km/h",
