@@ -8,8 +8,6 @@
     <title>Document</title>
   </head>
   <body>
-    <iframe src="audio\L s theme A_48k.mp3" allow="autoplay" style="display:none" id="iframeAudio">
-    </iframe>
     <div id="popup" class ="container-popup">
       <article class="poup" >
           <img src="img\x_cross_delete_remove_icon_144023.svg" onclick="cerrarpopup()" class="cruzcerrar" alt="" srcset="">
@@ -27,6 +25,17 @@
         <button class="button" onclick="abrirpopup()">Join Players</button>
         <a class="buttonFooter" href="paginaDN.html"><button>Prueba tu suerte</button></a>
       </article>
+      <div class ="audio-section">
+        <audio id="mysong">
+         <source src ="audio/song.wav" type="audio/wav">
+     </audio>
+     <div class="pauseplay">      
+         <p>here to listen</p> 
+         <img src="img/play.png" class ="img" id ="icon">
+     </div>
+        </div>
+      </div>
+    </div>
     </div>
    <script src="js\jspopup.js"></script>
   </body>

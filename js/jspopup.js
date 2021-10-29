@@ -32,3 +32,17 @@ function cerrarpopup(){
     document.getElementById("popup").style.display = "none"
     document.getElementById("inicio").style.display = "flex"
 }
+
+
+let mysong=document.getElementById("mysong")
+let icon=document.getElementById("icon")
+icon.onclick=function(){
+    if(mysong.paused){
+        mysong.play();
+        icon.src="img/play.png";  
+    }else{
+        mysong.pause();
+        icon.src ="img/pause.png";
+    }
+}
+

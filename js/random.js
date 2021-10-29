@@ -23,3 +23,6 @@ function imprimirVictima(identificador, lista) {
 }
 imprimirVictima("#victima", victimas);
 imprimirVictima("#causaMortal", causas);
+
+
+
