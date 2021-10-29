@@ -8,34 +8,38 @@
     <title>Document</title>
   </head>
   <body>
-    <div id="popup" class ="container-popup">
-      <article class="poup" >
-          <img src="img\x_cross_delete_remove_icon_144023.svg" onclick="cerrarpopup()" class="cruzcerrar" alt="" srcset="">
-           <ul id="impresionarray">
-               
-           </ul>
-           <section class ="input-buton">
-           <input type="text" id="inputnombres" class="inputNames" value="">
-           <button class ="botton-enviar" onclick="pushnames(), mostrarnombres()" >Escribir</button>
-           </section>
-       </article>
-   </div>
+    <div id="popup" class="container-popup">
+      <article class="poup">
+        <img
+          src="img\x_cross_delete_remove_icon_144023.svg"
+          onclick="cerrarpopup()"
+          class="cruzcerrar"
+          alt=""
+          srcset=""
+        />
+        <ul id="impresionarray"></ul>
+        <section class="input-buton">
+          <input type="text" id="inputnombres" class="inputNames" value="" />
+          <button class="botton-enviar" onclick="pushnames(), mostrarnombres()">
+            Escribir
+          </button>
+        </section>
+      </article>
+    </div>
     <div class="containerIndex">
       <article id="inicio" class="containerButton">
         <button class="button" onclick="abrirpopup()">Join Players</button>
         <a class="buttonFooter" href="paginaDN.html"><button>Prueba tu suerte</button></a>
       </article>
-      <div class ="audio-section">
+      <div class="audio-section">
         <audio id="mysong">
-         <source src ="audio/song.wav" type="audio/wav">
-     </audio>
-     <div class="pauseplay">      
-         <img src="img/play.png" class ="img" id ="icon">
-     </div>
+          <source src="audio/song.wav" type="audio/wav" />
+        </audio>
+        <div class="pauseplay">
+          <img src="img/play.png" class="img" id="icon" />
         </div>
       </div>
     </div>
-    </div>
-   <script src="js\jspopup.js"></script>
+    <script src="js\jspopup.js"></script>
   </body>
 </html>

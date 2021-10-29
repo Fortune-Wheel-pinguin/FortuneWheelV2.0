@@ -1,3 +1,7 @@
+0.1541368461869
+
+
+
 let causas = [
   "tu amigo y vecino spiderman muere a causa del guantele de thanos.",
   "Atropellado por el autobus a 100km/h",
@@ -8,7 +12,7 @@ let victimas = ["pera", "manzana", "limon"];
 function randomNum(maximo) {
   let num = Math.random() * maximo;
   let redondearNum = Math.floor(num);
-
+  
   return redondearNum;
 }
 

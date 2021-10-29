@@ -26,9 +26,11 @@
   color: black;
 }
 .poup ul{
-  margin-top: 145px;
-  margin-right: 150px;
   font-size: 25px;
+  width: 70%;
+  margin-top: 75px;
+  display: flex;
+  flex-direction: column;
 
 }
 .delete {
@@ -45,3 +47,15 @@
   margin-top: 20px;
   margin-left: 240px;
 }
+
+@media screen and (min-width: 460px) {
+ .poup li{
+  margin-left: 100px;
+ }
+}
+
+@media screen and (min-width: 1024px) {
+  .poup li{
+   margin-left: 150px;
+  }
+ }

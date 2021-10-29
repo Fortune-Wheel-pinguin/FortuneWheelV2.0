@@ -1,21 +1,52 @@
 
 .button {
-  height: 5%;
-  width: 40%;
+  background-color: transparent;
+  border: none;
+
+  display: flex;
+  text-align: center;
+  color:white;
+  font-size: 1.3em;
 }
 .buttonFooter {
     position: absolute;
     bottom: 10%;
+}
+.buttonFooter button {
+  background-color: transparent;
+  border: none;
+
+  color: white;
+  font-size: 1.3em;
+}
+.volvermenucruz{
+  width: 30px;
+  height: 30px;
+  display: flex;
+  position: absolute;
+  margin-top: 40px;
+  margin-left: 300px;
+}
+.volvermenucruz :hover {
+  background-color: rgb(70, 65, 65);
+  border-radius: 5px;
+}
+
+@media screen and (min-height: 1024px) {
+  .button{
+    font-size: 1.8em;
   }
-  .volvermenucruz{
-    width: 30px;
-    height: 30px;
-    display: flex;
-    position: absolute;
-    margin-top: 40px;
-    margin-left: 300px;
+  .buttonFooter {
+    font-size: 1.4em;
+    bottom: 20%;
   }
-  .volvermenucruz :hover {
-    background-color: rgb(70, 65, 65);
-    border-radius: 5px;
+}
+@media screen and (min-height: 1366px) {
+  .button {
+    font-size: 3em;
   }
+  
+  .buttonFooter {
+    font-size: 2.2em;
+  }
+}
