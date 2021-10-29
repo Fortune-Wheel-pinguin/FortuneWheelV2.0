@@ -32,3 +32,28 @@ function cerrarpopup(){
     document.getElementById("popup").style.display = "none"
     document.getElementById("inicio").style.display = "flex"
 }
+
+////////////////////
+function borrarVictimaArray(victima){
+    for (let i = 0; i < Names.length; i++) {
+        if (victima == Names[i]) {
+            Names.splice(i, 1)
+            console.log(Names)
+        }
+        
+    }
+    console.log(Names)
+}
+borrarVictimaArray("hola")
+
+function borrarVictimas(elementoThis) {
+    let localizacion = document.getElementById("borrar");
+    let nombreVictima = elementoThis.previousSibling;
+    let elementoLi = nombreVictima.parentElement;
+    //elementoLi.remove();
+    borrarVictimaArray(nombreVictima)
+    //console.log(typeof)
+    
+    //console.log(elementoLi);
+}
+      

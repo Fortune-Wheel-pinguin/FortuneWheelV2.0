@@ -21,11 +21,7 @@
   justify-content: center;
   align-items: center;
 }
-.prueba {
-  width: 100px;
-  height: 100px;
-  background-color: crimson;
-}
+
 .poup li{
   color: black;
 }
@@ -35,6 +31,12 @@
   font-size: 25px;
 
 }
+.delete {
+  color: red;
+  background: transparent;
+  border: none;
+}
+
 .cruzcerrar{
   display: flex;
   position: absolute;
