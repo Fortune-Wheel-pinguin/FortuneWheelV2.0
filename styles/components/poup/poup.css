@@ -1,0 +1,47 @@
+.poup {
+  margin-top: 220px;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-image: url("../../../img/hojaRota.png");
+  display: flex;
+  height: 60vh;
+  justify-content: center;
+  position: relative;
+  width: 70%;
+}
+.input-buton {
+  position: absolute;
+  bottom: 5%;
+  margin: 0 5% 0 5%;
+  border: 0px;
+
+}
+.container-popup {
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.poup li{
+  color: black;
+}
+.poup ul{
+  margin-top: 145px;
+  margin-right: 150px;
+  font-size: 25px;
+
+}
+.delete {
+  color: red;
+  background: transparent;
+  border: none;
+}
+
+.cruzcerrar{
+  display: flex;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  margin-top: 20px;
+  margin-left: 240px;
+}

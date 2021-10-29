@@ -1,0 +1,17 @@
+/* solo importaciones */
+
+@import "reset.css";
+@import "./variables.css";
+@import "./components/main_components.css";
+/*view port*/
+
+
+body {
+  background-color: var(--background_color);
+  background-image: url("../img/fondodeahtNote.png");
+  background-repeat: no-repeat;
+  background-position: top;
+  overflow: hidden;
+}
+/*background-attachment: fixed;
+/*background-position: center;

@@ -1,0 +1,37 @@
+.texto {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 32%;
+}
+
+.causaMuerte {
+  font-size: 1.3em;
+  width: 120%;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+.nombre {
+  font-size: 2em;
+  margin-top: 5%;
+}
+
+.pluma {
+  width: 70px;
+}
+
+/*@media screen and (max-width: 2100px) {
+  .causaMuerte {
+    width: 100%;
+    margin-top: 4%;
+    display: flex;
+    align-items: center;
+  }
+  .nombre {
+    margin-top: 1.3%;
+    display: flex;
+    align-items: center;
+  }
+}*/

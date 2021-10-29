@@ -1,1 +1,2 @@
-"# saddswfawserf2" 
+# Fortune-Wheel
+APP- funciones aleatorias.
