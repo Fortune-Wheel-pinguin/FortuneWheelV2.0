@@ -9,12 +9,11 @@
   </head>
   <body>
 
-
     <div id="popup" class="container-popup">
       <article class="poup">
         <img
           src="img\x_cross_delete_remove_icon_144023.svg"
-          onclick="cerrarpopup()"
+          onclick="cerrar('popup', 'inicio')"
           class="cruzcerrar"
           alt=""
           srcset=""
@@ -22,18 +21,17 @@
         <ul id="impresionarray"></ul>
         <section class="input-buton">
           <input type="text" id="inputnombres" class="inputNames" value="" />
-          <button class="botton-enviar" onclick="pushnames(), mostrarnombres()">
+          <button class="botton-enviar" onclick="pushnames(inputnombres.value)">
             Escribir
           </button>
         </section>
       </article>
     </div>
 
-
     <div class="containerIndex">
       <article id="inicio" class="containerButton">
-        <button class="button" onclick="abrirpopup()">Join Players</button>
-        <a class="buttonFooter" href="paginaDN.html"><button>Prueba tu suerte</button></a>
+        <button class="button" onclick="abrir('popup', 'inicio')">Join Players</button>
+        <a class="buttonFooter" ><button onclick="start()" >Prueba tu suerte</button></a>
       </article>
       <div class="audio-section">
         <audio id="mysong">
@@ -45,7 +43,21 @@
       </div>
     </div>
 
+    <div class="containerDN" id="containerDN">
+      <a class="volvermenucruz" onclick="cerrar('containerDN', 'inicio')"><img src="img\x_cross_delete_remove_icon_144023.svg"  alt="" srcset=""></a> 
+      <article class="hoja">
+        <section class="texto">
+          <p class ="causaMuerte" id ="causaMortal">
+          </p>
+          <p class="nombre" id="victima"></p>
+        </section>
+        <section class="flexPluma">
+          <div class="pluma"></div>
+        </section>
+      </article>
+    </div>
 
-    <script src="js\jspopup.js"></script>
+    
+    <script src="js\main.js"></script>
   </body>
 </html>
