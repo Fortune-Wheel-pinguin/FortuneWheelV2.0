@@ -21,7 +21,7 @@
         <ul id="impresionarray"></ul>
         <section class="input-buton">
           <input type="text" id="inputnombres" class="inputNames" value="" />
-          <button class="botton-enviar" onclick="pushnames(inputnombres.value)">
+          <button id="sub" class="botton-enviar" onclick="pushnames(inputnombres.value)">
             Escribir
           </button>
         </section>
@@ -44,7 +44,9 @@
     </div>
 
     <div class="containerDN" id="containerDN">
-      <a class="volvermenucruz" onclick="cerrar('containerDN', 'inicio')"><img src="img\x_cross_delete_remove_icon_144023.svg"  alt="" srcset=""></a> 
+      <div class="divfecha" id="fecha">
+      </div>
+      <a class="volvermenucruz" onclick="resetAndClose()"><img src="img\x_cross_delete_remove_icon_144023.svg"  alt="" srcset=""></a> 
       <article class="hoja">
         <section class="texto">
           <p class ="causaMuerte" id ="causaMortal">

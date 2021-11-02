@@ -21,6 +21,11 @@
   display: flex;
   justify-content: center;
 }
+.divfecha{
+  position: absolute;
+  top: 40px;
+  right: 30px;
+}
 
 @media screen and (min-width: 960px) {
   .texto{
