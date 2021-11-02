@@ -35,12 +35,14 @@ function pushnames(value){
     mostrarnombres()
     inputnombres.value = ""
 }
-
+function borrarVictimas(elementothis){
+  console.log(elementothis.previousElementSibling.value)
+}
 function mostrarnombres(){
     let localizacion = document.getElementById("impresionarray");
     let todolist = ""
     names.forEach(elemento => {
-            todolist += `<li>${elemento} <button onclick = "borrarVictimas(this)" class = "delete" id = "borrar">X</button> </li>`
+            todolist += `<li><p>${elemento}</p><button onclick = "borrarVictimas(this)" class = "delete" id = "borrar">X</button></li>`
     });
     localizacion.innerHTML = todolist;
 }
