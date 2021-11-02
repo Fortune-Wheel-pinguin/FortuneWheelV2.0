@@ -33,6 +33,7 @@ icon.onclick = function(){
 function pushnames(value){
     names.push(value)
     mostrarnombres()
+    inputnombres.value = ""
 }
 
 function mostrarnombres(){
@@ -121,21 +122,36 @@ function randomNum(maximo) {
 
 
   function diamuerte(){
-    let dia = Math.floor(Math.random() * 32)+1;
+    let dia = Math.floor(Math.random() * 30)+1;
     let mes = Math.floor(Math.random() * 13)+1;
     let año = Math.floor(Math.random() * (2025 - 2021)) + 2021;
-    document.getElementById("fecha").innerHTML = `${dia}${mes}${año}`
+    document.getElementById("fecha").innerHTML = `${dia} / ${mes} / ${año}`
   
   }
   
+  function resetAndClose(){
+    cerrar('containerDN', 'inicio')
+    names = []
+    causas = [
+      "tu amigo y vecino spiderman muere a causa del guantele de thanos.",
+      "Atropellado por el autobus a 100km/h",
+    ];
+  }
+  function comprobacion(){
+    if (names == []){
 
+    }
+  }
 
 //funcion MAIN
   function start() {
-    abrir('containerDN', 'inicio')
+    if (names.length != 0 & causas.length != 0){
+      abrir('containerDN', 'inicio')
+      diamuerte()
+      kill()
+      imprimirEnHoja()
+    }
     
-    kill()
-    imprimirEnHoja()
   }
 /*
 console.log(names)
