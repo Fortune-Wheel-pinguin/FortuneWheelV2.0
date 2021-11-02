@@ -43,6 +43,15 @@ function mostrarnombres(){
     });
     localizacion.innerHTML = todolist;
 }
+///ENTER/////
+document
+  .getElementById("inputnombres")
+  .addEventListener("keyup", function (event) {
+    event.preventDefault();
+    if (event.keyCode === 13) {
+      document.getElementById("sub").click();
+    }
+  });
 
 //function impresionnombres(){
 //   document.getElementById("impresionarray").innerHTML = Names;
