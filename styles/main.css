@@ -1,6 +1,6 @@
 /* solo importaciones */
 
-/*@import "reset.css";*/
+@import "reset.css";
 @import "./variables.css";
 @import "./components/main_components.css";
 

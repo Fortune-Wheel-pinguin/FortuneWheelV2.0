@@ -1,7 +1,7 @@
 let names = [];
 let causas = [
-    "tu amigo y vecino spiderman muere a causa del guantele de thanos.",
-    "Atropellado por el autobus a 100km/h",
+    "TU AMIGO Y VECINO SPIDERMAN MUERE A CAUSA DEL GUANTELETE DE THANOS.",
+    "ATROPELLADO POR EL AUTOBUS A 100KM/H .",
   ];
 let victima = ''
 let causa = ''
@@ -135,15 +135,11 @@ function randomNum(maximo) {
     cerrar('containerDN', 'inicio')
     names = []
     causas = [
-      "tu amigo y vecino spiderman muere a causa del guantele de thanos.",
-      "Atropellado por el autobus a 100km/h",
+      "TU AMIGO Y VECINO SPIDERMAN MUERE A CAUSA DEL GUANTELETE DE THANOS.",
+      "ATROPELLADO POR EL AUTOBUS A 100KM/H .",
     ];
   }
-  function comprobacion(){
-    if (names == []){
 
-    }
-  }
 
 //funcion MAIN
   function start() {
