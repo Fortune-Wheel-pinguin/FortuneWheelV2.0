@@ -1,12 +1,18 @@
 /* solo importaciones */
 
-@import "reset.css";
+/*@import "reset.css";*/
 @import "./variables.css";
 @import "./components/main_components.css";
-/*view port*/
 
-
+/* @font-face kit by Fonts2u (https://fonts2u.com) */ 
+@font-face {
+  font-family:"DEATHNOTE Font";
+  src: url("./DEATHNOTEFont.woff") format("woff");
+  font-weight:normal;
+  font-style:normal;
+}
 body {
+  font-family: 'DEATHNOTE Font';
   background-color: var(--background_color);
   background-image: url("../img/fondodeahtNote.png");
   background-repeat: no-repeat;
@@ -14,6 +20,7 @@ body {
   background-position: top;
   overflow: hidden;
 }
+
 /*background-attachment: fixed;*/
 /*background-position: center;*/
 
