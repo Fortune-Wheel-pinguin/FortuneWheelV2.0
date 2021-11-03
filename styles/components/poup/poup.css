@@ -11,9 +11,10 @@
 }
 .input-buton {
   position: absolute;
-  bottom: 5%;
+  bottom: 14%;
   margin: 0 5% 0 5%;
   border: 0px;
+  display: flex;
 
 }
 .container-popup {
@@ -43,10 +44,16 @@
 .cruzcerrar{
   display: flex;
   position: absolute;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   margin-top: 20px;
   margin-left: 240px;
+}
+.btnname{
+  background-color: transparent;
+  border: none;
+  font-family: var(--fonts_DN);
+  font-size: 25px;
 }
 
 @media screen and (min-width: 460px) {
