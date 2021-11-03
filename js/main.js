@@ -75,8 +75,17 @@ function borrarVictimas(elementothis) {
 }
 
 //funcion Update name
-function upDateName() {
+function reNombrar(index, valueActualizado) {
+  console.log(valueActualizado)
+}
 
+function upDateName(name) {
+  abrir('update','sub')
+  document.getElementById('inputnombres').value = name
+  
+  let indice = rangeArray('names', name)
+
+  reNombrar(indice)
 }
 
 
@@ -86,12 +95,15 @@ function mostrarnombres() {
   let todolist = "";
   names.forEach((elemento) => {
     todolist += `<li>
-                            <button class="btnname" value='${elemento.toUpperCase()}'>${elemento.toUpperCase()}</button>
+                            <button onclick='upDateName(upDate.value)' class="btnname" id= 'upDate' value='${elemento.toUpperCase()}'>${elemento.toUpperCase()}</button>
                             <button onclick = "borrarVictimas(this)" class = "delete" id = "borrar">X</button>
                          </li>`;
   });
   localizacion.innerHTML = todolist;
 }
+
+
+//////////////////////////////////////////////////////////////////
 
 
 //funcion numero random

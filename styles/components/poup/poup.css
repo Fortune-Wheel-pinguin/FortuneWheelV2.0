@@ -56,6 +56,14 @@
   font-size: 25px;
 }
 
+.actualizarBtn{
+  display: none;
+}
+
+.button-enviar{
+  display: flex;
+}
+
 @media screen and (min-width: 460px) {
  .poup li{
   margin-left: 100px;

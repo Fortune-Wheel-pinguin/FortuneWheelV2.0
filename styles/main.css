@@ -12,6 +12,9 @@
   font-style: normal;
 }
 
+
+
+
 body {
   font-family: "DEATHNOTE Font";
   background-color: var(--background_color);
@@ -22,8 +25,7 @@ body {
   overflow: hidden;
 }
 
-/*background-attachment: fixed;*/
-/*background-position: center;*/
+
 
 @media screen and (min-width: 769px) {
   body {

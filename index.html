@@ -21,9 +21,12 @@
         <ul id="impresionarray" style="text-transform: uppercase;"></ul>
         <section class="input-buton">
           <input type="text" id="inputnombres" class="inputNames" style="text-transform: uppercase;" value="" placeholder="victima" />
-          <button id="sub" class="botton-enviar" onclick="pushnames(inputnombres.value)">
-            Escribir
-          </button>
+          <div>
+            <button id = 'update' class="actualizarBtn" onclick="reNombrar(inputnombres.value)">UpDate</button>
+            <button id="sub" class="button-enviar" onclick="pushnames(inputnombres.value)">
+              Escribir
+            </button>
+          </div>
         </section>
       </article>
     </div>
