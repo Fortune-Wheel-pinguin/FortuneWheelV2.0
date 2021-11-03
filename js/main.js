@@ -1,20 +1,13 @@
 let names = [];
 let causas = [
-    "tu amigo y vecino spiderman muere a causa del guantele de thanos.",
-    "Atropellado por el autobus a 100km/h",
+    "TU AMIGO Y VECINO SPIDERMAN MUERE A CAUSA DEL GUANTELETE DE THANOS.",
+    "ATROPELLADO POR EL AUTOBUS A 100KM/H .",
   ];
 let victima = ''
 let causa = ''
 
-// Funciones para mostrar o cerrar PopUp
-function abrir(mostrar, ocultar){
-    document.getElementById(mostrar).style.display = "flex"
-    document.getElementById(ocultar).style.display = "none"
-}
-function cerrar(ocultar, mostrar){
-    document.getElementById(ocultar).style.display = "none"
-    document.getElementById(mostrar).style.display = "flex"
-}
+
+
 
 // Funciones para la musica de fondo
 let mysong = document.getElementById("mysong")
@@ -29,6 +22,17 @@ icon.onclick = function(){
     }
 }
 
+// Funciones para mostrar o cerrar PopUp
+function abrir(mostrar, ocultar){
+    document.getElementById(mostrar).style.display = "flex"
+    document.getElementById(ocultar).style.display = "none"
+}
+function cerrar(ocultar, mostrar){
+    document.getElementById(ocultar).style.display = "none"
+    document.getElementById(mostrar).style.display = "flex"
+}
+
+
 // Funciones añadir Victimas
 function pushnames(value){
   if (inputnombres.value.length < 4 ) {
@@ -39,14 +43,32 @@ function pushnames(value){
     inputnombres.value = ""
     
 }
+
+//Funcion For Loop con filtro devuelve Indice
+  function rangeArray(array, filter) {
+    for (let i = 0; i < array.length; i++) {
+      if (array[i] == filter) {
+        return i
+      }
+      
+    }
+  }
+// Funcion borrar Victimas
 function borrarVictimas(elementothis){
   console.log(elementothis.previousElementSibling.value)
 }
+
+
+
+// funcion Imprimir en popUp
 function mostrarnombres(){
     let localizacion = document.getElementById("impresionarray");
     let todolist = ""
     names.forEach(elemento => {
-            todolist += `<li><p>${elemento}</p><button onclick = "borrarVictimas(this)" class = "delete" id = "borrar">X</button></li>`
+            todolist += `<li>
+                            <button>${elemento}</button>
+                            <button onclick = "borrarVictimas(this)" class = "delete" id = "borrar">X</button>
+                         </li>`
     });
     localizacion.innerHTML = todolist;
 }
@@ -96,7 +118,7 @@ function borrarVictimas(elementoThis) {
 }*/
 
 
-// funicones de Randomizado
+// funicones de Randomizado /////////////////
 
 
 //funcion numero random
@@ -111,8 +133,17 @@ function randomNum(maximo) {
   function kill(){
     victima = names.splice(randomNum(names.length),1)[0]
     causa = causas.splice(randomNum(causas.length),1)[0]
-    console.log('kill :',victima, 'causa: ',causa)
+    console.log('causa: ',causa, 'kill :',victima )
   }
+
+// funcion fecha random
+function diamuerte(){
+  let dia = Math.floor(Math.random() * 30)+1;
+  let mes = Math.floor(Math.random() * 13)+1;
+  let año = Math.floor(Math.random() * (2025 - 2021)) + 2021;
+  document.getElementById("fecha").innerHTML = `${dia} / ${mes} / ${año}`
+
+}
 
 //funcion imprimir elementos en el DOOM
   function imprimirEnHoja() {
@@ -124,29 +155,18 @@ function randomNum(maximo) {
   }
   
 
-
-
-  function diamuerte(){
-    let dia = Math.floor(Math.random() * 30)+1;
-    let mes = Math.floor(Math.random() * 13)+1;
-    let año = Math.floor(Math.random() * (2025 - 2021)) + 2021;
-    document.getElementById("fecha").innerHTML = `${dia} / ${mes} / ${año}`
-  
-  }
-  
+// Funcion restablecer Arrays
   function resetAndClose(){
     cerrar('containerDN', 'inicio')
     names = []
     causas = [
-      "tu amigo y vecino spiderman muere a causa del guantele de thanos.",
-      "Atropellado por el autobus a 100km/h",
+      "TU AMIGO Y VECINO SPIDERMAN MUERE A CAUSA DEL GUANTELETE DE THANOS.",
+      "ATROPELLADO POR EL AUTOBUS A 100KM/H .",
     ];
   }
-  function comprobacion(){
-    if (names == []){
 
-    }
-  }
+
+
 
 //funcion MAIN
   function start() {

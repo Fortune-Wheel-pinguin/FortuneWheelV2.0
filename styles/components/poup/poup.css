@@ -24,6 +24,7 @@
 
 .poup li{
   color: black;
+  display: flex;
 }
 .poup ul{
   font-size: 25px;

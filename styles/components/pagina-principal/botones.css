@@ -6,7 +6,8 @@
   display: flex;
   text-align: center;
   color:white;
-  font-size: 1.3em;
+  font-size: 2em;
+  font-family: var(--fonts_DN);
 }
 .buttonFooter {
     position: absolute;
@@ -17,7 +18,8 @@
   border: none;
 
   color: white;
-  font-size: 1.3em;
+  font-size: 2em;
+  font-family: var(--fonts_DN);
 }
 .volvermenucruz{
   width: 30px;
