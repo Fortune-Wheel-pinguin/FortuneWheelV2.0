@@ -4,17 +4,17 @@
 @import "./variables.css";
 @import "./components/main_components.css";
 
-/* @font-face kit by Fonts2u (https://fonts2u.com) */ 
+/* @font-face kit by Fonts2u (https://fonts2u.com) */
 @font-face {
-  font-family:"DEATHNOTE Font";
+  font-family: "DEATHNOTE Font";
   src: url("./DEATHNOTEFont.woff") format("woff");
-  font-weight:normal;
-  font-style:normal;
+  font-weight: normal;
+  font-style: normal;
 }
 body {
-  font-family: 'DEATHNOTE Font';
+  font-family: "DEATHNOTE Font";
   background-color: var(--background_color);
-  background-image: url("../img/fondodeahtNote.png");
+  background-image: url("../img/fondo.jpg");
   background-repeat: no-repeat;
   background-size: 99%;
   background-position: top;
@@ -26,24 +26,24 @@ body {
 
 @media screen and (min-width: 769px) {
   body {
-    background-size:38%;
+    background-size: 38%;
   }
- }
+}
 
- @media screen and (min-width: 800px) {
+@media screen and (min-width: 800px) {
   body {
     background-size: 62%;
   }
- }
+}
 
- @media screen and (min-width: 1025px) {
+@media screen and (min-width: 1025px) {
   body {
     background-size: 35%;
   }
- }
+}
 
- @media screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   body {
     background-size: 30%;
   }
- }
+}
