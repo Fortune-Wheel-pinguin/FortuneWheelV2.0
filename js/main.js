@@ -47,6 +47,16 @@ function pushnames(value){
   }
 }
 
+///ENTER/////
+document
+  .getElementById("inputnombres")
+  .addEventListener("keyup", function (event) {
+    event.preventDefault();
+    if (event.keyCode === 13) {
+      document.getElementById("sub").click();
+    }
+  });
+
 //Funcion For Loop con filtro devuelve Indice
 function rangeArray(array, filter) {
   for (let i = 0; i < array.length; i++) {
@@ -65,6 +75,12 @@ function borrarVictimas(elementothis){
   mostrarnombres()
 }
 
+//funcion Update name
+function upDateName() {
+
+}
+
+
 // funcion Imprimir en popUp
 function mostrarnombres(){
     let localizacion = document.getElementById("impresionarray");
@@ -77,15 +93,7 @@ function mostrarnombres(){
   });
   localizacion.innerHTML = todolist;
 }
-///ENTER/////
-document
-  .getElementById("inputnombres")
-  .addEventListener("keyup", function (event) {
-    event.preventDefault();
-    if (event.keyCode === 13) {
-      document.getElementById("sub").click();
-    }
-  });
+
 
 //funcion numero random
 function randomNum(maximo) {

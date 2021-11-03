@@ -7,8 +7,7 @@
 /* @font-face kit by Fonts2u (https://fonts2u.com) */ 
 @font-face {
   font-family:"DEATHNOTE Font";
-  src: url("./DEATHNOTEFont.woff") format("woff"),
-  url('./Death_Note_Font_by_Karlibell22.ttf') format('ttf');
+  src: url("./DEATHNOTEFont.woff") format("woff");
   font-weight:normal;
   font-style:normal;
 }
