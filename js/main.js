@@ -1,12 +1,12 @@
 let names = [];
 let causas = [
-  "TE LINCHARÁN EN MASA HASTA LA MUERTE AL CONFUNDIRTE CON UN CONTRABANDISTA HUMANO.",
-  "VOLCARÁ EL AUTOBÚS EN EL QUE VIAJAS Y MORIRÁS APLASTADO POR LOS DEMÁS PASAJEROS.",
-  "TE DESMAYARÁS POR UN GOLPE EN LA CABEZA Y MORIRÁS AHOGADO EN TU PROPIA SALIVA.",
-  "MORIRÁS CALCINADO AL CAER CERCA UNA LLUVIA DE METEORITOS.",
-  "PASEANDO POR LA CALLE MORIRÁS AL CAERTE ENCIMA UNA PERSONA INTENTANDO SUICIDARSE, GRACIAS A TÍ EL SUICIDA SOBREVIVIRÁ.",
-  "MORIRÁS TRAS GOLPEARTE LA CABEZA AL CAERTE DE LA CAMA MIENTRAS DUERMES",
-  "MORIRÁS POR UNA GRAVE INFECCIÓN PROVOCADA POR UNA ESPINA DE PESCADO EN TU ESTÓMAGO.",
+  "TE LINCHARAN EN MASA HASTA LA MUERTE AL CONFUNDIRTE CON UN CONTRABANDISTA HUMANO.",
+  "VOLCARA EL AUTOBUS EN EL QUE VIAJAS Y MORIRAS APLASTADO POR LOS DEMAS PASAJEROS.",
+  "TE DESMAYARAS POR UN GOLPE EN LA CABEZA Y MORIRAS AHOGADO EN TU PROPIA SALIVA.",
+  "MORIRAS CALCINADO AL CAER CERCA UNA LLUVIA DE METEORITOS.",
+  "PASEANDO POR LA CALLE MORIRAS AL CAERTE ENCIMA UNA PERSONA INTENTANDO SUICIDARSE, GRACIAS A TI EL SUICIDA SOBREVIVIRA.",
+  "MORIRAS TRAS GOLPEARTE LA CABEZA AL CAERTE DE LA CAMA MIENTRAS DUERMES",
+  "MORIRAS POR UNA GRAVE INFECCION PROVOCADA POR UNA ESPINA DE PESCADO EN TU ESTOMAGO.",
 ];
 let victima = "";
 let causa = "";
@@ -35,15 +35,14 @@ function cerrar(ocultar, mostrar) {
 }
 
 // Funciones añadir Victimas
-function pushnames(value){
-  if (inputnombres.value.length >= 4 & inputnombres.value.length <= 12) {
-    names.push(value)
-    mostrarnombres()
-    inputnombres.value = ""
-  }
-  else{
-  inputnombres.value = ""
-  alert("Nombre no válido")
+function pushnames(value) {
+  if ((inputnombres.value.length >= 4) & (inputnombres.value.length <= 12)) {
+    names.push(value);
+    mostrarnombres();
+    inputnombres.value = "";
+  } else {
+    inputnombres.value = "";
+    alert("Nombre no válido");
   }
 }
 
@@ -66,13 +65,13 @@ function rangeArray(array, filter) {
   }
 }
 // Funcion borrar Victimas
-function borrarVictimas(elementothis){
-  let victimaABorrar = elementothis.previousElementSibling.value
-  let index = rangeArray(names, victimaABorrar)
+function borrarVictimas(elementothis) {
+  let victimaABorrar = elementothis.previousElementSibling.value;
+  let index = rangeArray(names, victimaABorrar);
 
-  names.splice(index, 1)
+  names.splice(index, 1);
 
-  mostrarnombres()
+  mostrarnombres();
 }
 
 //funcion Update name
@@ -82,11 +81,11 @@ function upDateName() {
 
 
 // funcion Imprimir en popUp
-function mostrarnombres(){
-    let localizacion = document.getElementById("impresionarray");
-    let todolist = ""
-    names.forEach(elemento => {
-            todolist += `<li>
+function mostrarnombres() {
+  let localizacion = document.getElementById("impresionarray");
+  let todolist = "";
+  names.forEach((elemento) => {
+    todolist += `<li>
                             <button class="btnname" value='${elemento.toUpperCase()}'>${elemento.toUpperCase()}</button>
                             <button onclick = "borrarVictimas(this)" class = "delete" id = "borrar">X</button>
                          </li>`;
@@ -116,6 +115,7 @@ function diamuerte() {
   let mes = Math.floor(Math.random() * 13) + 1;
   let año = Math.floor(Math.random() * (2025 - 2021)) + 2021;
   document.getElementById("fecha").innerHTML = `${dia} / ${mes} / ${año}`;
+  document.getElementById("victimafecha").innerHTML = `${dia} / ${mes} / ${año}`;
 }
 
 //funcion imprimir elementos en el DOOM
@@ -123,24 +123,26 @@ function imprimirEnHoja() {
   let localizacionCausa = document.querySelector("#causaMortal");
   let localizacionVictima = document.querySelector("#victima");
 
-    localizacionCausa.innerHTML = causa.toUpperCase();
-    localizacionVictima.innerHTML = victima.toUpperCase();
-  }
-  
+  localizacionCausa.innerHTML = causa.toUpperCase();
+  localizacionVictima.innerHTML = victima.toUpperCase();
+}
 
 // Funcion restablecer Arrays
-  function resetAndClose(){
-    cerrar('containerDN', 'inicio')
-    names = []
-    causas = [
-      "TU AMIGO Y VECINO SPIDERMAN MUERE A CAUSA DEL GUANTELETE DE THANOS.",
-      "ATROPELLADO POR EL AUTOBUS A 100KM/H .",
-    ];
-    mostrarnombres()
-  }
+function resetAndClose() {
+  cerrar("containerDN", "inicio");
+  names = [];
+  causas = [
+    "TE LINCHARAN EN MASA HASTA LA MUERTE AL CONFUNDIRTE CON UN CONTRABANDISTA HUMANO.",
+    "VOLCARA EL AUTOBUS EN EL QUE VIAJAS Y MORIRAS APLASTADO POR LOS DEMAS PASAJEROS.",
+    "TE DESMAYARAS POR UN GOLPE EN LA CABEZA Y MORIRAS AHOGADO EN TU PROPIA SALIVA.",
+    "MORIRAS CALCINADO AL CAER CERCA UNA LLUVIA DE METEORITOS.",
+    "PASEANDO POR LA CALLE MORIRAS AL CAERTE ENCIMA UNA PERSONA INTENTANDO SUICIDARSE, GRACIAS A TI EL SUICIDA SOBREVIVIRA.",
+    "MORIRAS TRAS GOLPEARTE LA CABEZA AL CAERTE DE LA CAMA MIENTRAS DUERMES",
+    "MORIRAS POR UNA GRAVE INFECCION PROVOCADA POR UNA ESPINA DE PESCADO EN TU ESTOMAGO.",
+  ];
 
-
-
+  mostrarnombres();
+}
 
 //funcion MAIN
 function start() {
