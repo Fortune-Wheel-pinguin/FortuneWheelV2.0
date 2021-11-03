@@ -55,7 +55,12 @@ function pushnames(value){
   }
 // Funcion borrar Victimas
 function borrarVictimas(elementothis){
-  console.log(elementothis.previousElementSibling.value)
+  let victimaABorrar = elementothis.previousElementSibling.value
+  let index = rangeArray(names, victimaABorrar)
+
+  names.splice(index, 1)
+
+  mostrarnombres()
 }
 
 
@@ -66,7 +71,7 @@ function mostrarnombres(){
     let todolist = ""
     names.forEach(elemento => {
             todolist += `<li>
-                            <button>${elemento}</button>
+                            <button value='${elemento}'>${elemento}</button>
                             <button onclick = "borrarVictimas(this)" class = "delete" id = "borrar">X</button>
                          </li>`
     });
