@@ -42,7 +42,7 @@ function pushnames(value){
   }
   else{
   inputnombres.value = ""
-  alert("NOMBRE NO VALIDO PERRO")
+  alert("Nombre no válido")
   }
 }
 
@@ -57,7 +57,12 @@ function pushnames(value){
   }
 // Funcion borrar Victimas
 function borrarVictimas(elementothis){
-  console.log(elementothis.previousElementSibling.value)
+  let victimaABorrar = elementothis.previousElementSibling.value
+  let index = rangeArray(names, victimaABorrar)
+
+  names.splice(index, 1)
+
+  mostrarnombres()
 }
 
 
@@ -68,7 +73,7 @@ function mostrarnombres(){
     let todolist = ""
     names.forEach(elemento => {
             todolist += `<li>
-                            <button>${elemento.toUpperCase()}</button>
+                            <button class="btnname" value='${elemento.toUpperCase()}'>${elemento.toUpperCase()}</button>
                             <button onclick = "borrarVictimas(this)" class = "delete" id = "borrar">X</button>
                          </li>`
     });
