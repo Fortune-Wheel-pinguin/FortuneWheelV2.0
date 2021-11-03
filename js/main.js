@@ -31,9 +31,13 @@ icon.onclick = function(){
 
 // Funciones añadir Victimas
 function pushnames(value){
+  if (inputnombres.value.length < 4 ) {
+    
+  } else
     names.push(value)
     mostrarnombres()
     inputnombres.value = ""
+    
 }
 function borrarVictimas(elementothis){
   console.log(elementothis.previousElementSibling.value)
@@ -55,7 +59,6 @@ document
       document.getElementById("sub").click();
     }
   });
-
 //function impresionnombres(){
 //   document.getElementById("impresionarray").innerHTML = Names;
 //}
