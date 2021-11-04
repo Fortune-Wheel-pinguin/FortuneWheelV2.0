@@ -85,7 +85,7 @@ function upDateName(name) {
   
   let indice = rangeArray('names', name)
 
-  reNombrar(indice)
+  reNombrar(indice) 
 }
 
 
