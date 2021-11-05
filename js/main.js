@@ -112,7 +112,7 @@ function kill() {
 // funcion fecha random
 function diamuerte() {
   let dia = Math.floor(Math.random() * 30) + 1;
-  let mes = Math.floor(Math.random() * 13) + 1;
+  let mes = Math.floor(Math.random() * 12) + 1;
   let año = Math.floor(Math.random() * (2025 - 2021)) + 2021;
   document.getElementById("fecha").innerHTML = `${dia} / ${mes} / ${año}`;
   document.getElementById("victimafecha").innerHTML = `${dia} / ${mes} / ${año}`;

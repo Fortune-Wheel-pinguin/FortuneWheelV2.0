@@ -1,5 +1,5 @@
-@import "./fondodn.css";
-@import "./textodn.css";
+@import "fondodn.css";
+@import "textodn.css";
 
 .containerDN {
     display: none;
