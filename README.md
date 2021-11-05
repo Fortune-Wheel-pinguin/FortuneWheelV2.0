@@ -46,16 +46,17 @@ GitHub - Repositorio online
 
 
 Autores
-Integrantes y roles dentro del proyecto:
-Felicia - Scrum Team - <a href='https://github.com/timfel20'>timfel20</a>
+-Integrantes y roles dentro del proyecto:
 
-Esther - Scrum Team - 
+-Felicia - Scrum Team - <a href='https://github.com/timfel20'>timfel20</a>
 
-Jaume Gomicia- Scrum Master - <a href='https://github.com/Exodya21'>Exodya21</a>
+-Esther - Scrum Team - 
 
-Jura- Product Owner - <a href='https://github.com/eljura111'>eljura111</a>
+-Jaume Gomicia - Scrum Master - <a href='https://github.com/Exodya21'>Exodya21</a>
 
-David- Scrum Team - <a href='https://github.com/Davaious'>Davaious</a>
+-Jura - Product Owner - <a href='https://github.com/eljura111'>eljura111</a>
+
+-David - Scrum Team - <a href='https://github.com/Davaious'>Davaious</a>
 
 Expresiones de Gratitud
 Comenta a otros sobre este proyecto
