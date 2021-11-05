@@ -11,6 +11,8 @@ let causas = [
 let victima = "";
 let causa = "";
 
+
+
 // Funciones para la musica de fondo
 let mysong = document.getElementById("mysong");
 let icon = document.getElementById("icon");
@@ -23,6 +25,7 @@ icon.onclick = function () {
     icon.src = "img/pause.png";
   }
 };
+// funciones del PopUp /////////////////////////////////////////////////////////////////
 
 // Funciones para mostrar o cerrar PopUp
 function abrir(mostrar, ocultar) {
@@ -56,39 +59,6 @@ document
     }
   });
 
-//Funcion For Loop con filtro devuelve Indice
-function rangeArray(array, filter) {
-  for (let i = 0; i < array.length; i++) {
-    if (array[i] == filter) {
-      return i;
-    }
-  }
-}
-// Funcion borrar Victimas
-function borrarVictimas(elementothis) {
-  let victimaABorrar = elementothis.previousElementSibling.value;
-  let index = rangeArray(names, victimaABorrar);
-
-  names.splice(index, 1);
-
-  mostrarnombres();
-}
-
-//funcion Update name
-function reNombrar(index, valueActualizado) {
-  console.log(valueActualizado)
-}
-
-function upDateName(name) {
-  abrir('update','sub')
-  document.getElementById('inputnombres').value = name
-  
-  let indice = rangeArray('names', name)
-
-  reNombrar(indice) 
-}
-
-
 // funcion Imprimir en popUp
 function mostrarnombres() {
   let localizacion = document.getElementById("impresionarray");
@@ -102,7 +72,25 @@ function mostrarnombres() {
   localizacion.innerHTML = todolist;
 }
 
+// Funcion borrar Victimas
+function borrarVictimas(elementothis) {
+  let victimaABorrar = elementothis.previousElementSibling.value;
+  let index = rangeArray(names, victimaABorrar);
 
+  names.splice(index, 1);
+
+  mostrarnombres();
+}
+
+
+//Funcion For Loop con filtro devuelve Indice
+function rangeArray(array, filter) {
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] == filter) {
+      return i;
+    }
+  }
+}
 //////////////////////////////////////////////////////////////////
 
 
@@ -165,11 +153,3 @@ function start() {
     imprimirEnHoja();
   }
 }
-/*
-console.log(names)
-pushnames('cosaPureuna')
-console.log(names)
-//kill()
-console.log(names)
-console.log(victima)
-*/
