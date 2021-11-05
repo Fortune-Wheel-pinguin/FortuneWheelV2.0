@@ -29,7 +29,7 @@ body {
   margin-top: 220px;
   background-position: top;
   background-repeat: no-repeat;
-  background-image: url("../img/hojaRota.png");
+  background-image: url("hojaRota.png");
   display: flex;
   height: 60vh;
   justify-content: center;
