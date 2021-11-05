@@ -2,6 +2,8 @@
 
 <a href='https://docs.google.com/presentation/d/1CZ9coOZDxAytMdcq8-6hDCn5i_Q_O7CwObKZ-uvWFCY/edit?usp=sharing'>Presentacion Google Slides</a>
 
+<a href='https://fortune-wheel-pinguin.github.io/FortuneWheelV2.0/'>Git Pages</a>
+
 Se trata de un proyecto en equipo que realiazamos en el Bootcamp de Factoria F5. Trabajamos en una app llamada <a href="https://github.com/Fortune-Wheel-pinguin/FortuneWheelV2.0">Fortune-Wheel</a>(Este link te redirecciona a nuestra app) en la cual creamos un sistema de selección de sacrificios de manera justa y aleatoria para los miembros. Una vez un nombre sale en la wheel, no puede volver a aparecer hasta que la wheel of doom se vuelva a iniciar.
 
 Comenzando
