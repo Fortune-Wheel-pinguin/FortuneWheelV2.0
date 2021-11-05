@@ -25,7 +25,17 @@ body {
   overflow: hidden;
 }
 
-
+.poup {
+  margin-top: 220px;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-image: url("../img/hojaRota.png");
+  display: flex;
+  height: 60vh;
+  justify-content: center;
+  position: relative;
+  width: 70%;
+}
 
 @media screen and (min-width: 769px) {
   body {
