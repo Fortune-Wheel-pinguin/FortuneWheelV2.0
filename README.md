@@ -52,7 +52,8 @@ Autores
 
 -Felicia - Scrum Team - <a href='https://github.com/timfel20'>timfel20</a>
 
--Esther - Scrum Team - 
+-Esther - Scrum Team - <a href='https://github.com/estherc2014
+'>estherc2014</a>
 
 -Jaume Gomicia - Scrum Master - <a href='https://github.com/Exodya21'>Exodya21</a>
 
